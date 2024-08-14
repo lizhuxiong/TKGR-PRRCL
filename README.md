@@ -34,10 +34,15 @@ To run the code, you need the following dependencies at least:
 
 ### preprocessing
 The code executes in the following order:
+
 (1) python process_icews.py
+
 (2) python path_data.py
+
 (3) python init_rw.py
+
 (4) g++ gen_merw.cpp -o gen_merw -g -Wall -O2 -mcmodel=medium
+
 (5) ./gen_merw [data_name] [path_num] [path_length]. Such as ./gen_merw ICEWS14 1 8
 
 ## Main model
